@@ -1,7 +1,7 @@
 # Tutorial - Deploy Nanonets-OCR-s using Inferless
 Nanonets-OCR-s is an open-source, **3-billion-parameter** vision-language model that turns scanned pages and PDFs directly into richly structured Markdown instead of flat text. It preserves tables as HTML, renders equations in LaTeX, tags check-boxes with ☐/☑, wraps page numbers and watermarks in explicit tags, and even inserts image captions or auto-generated descriptions inside `<img>` elements—producing outputs that are ready for downstream LLM or RAG pipelines.
 
-Under the hood, Nanonets-OCR-s is **fine-tuned from the Qwen 2.5-VL-3B-Instruct backbone**, inheriting that model’s strong multimodal reasoning and layout-aware capabilities. ([huggingface.co][2], [huggingface.co][3])  This choice gives the OCR system a compact size that still fits on a single consumer GPU while reaching state-of-the-art accuracy on complex documents. Community posts and the official announcement highlight that the entire 3 B stack is released under the Apache-2.0 licence, making it free to self-host, fine-tune or embed in commercial workflows.
+Under the hood, Nanonets-OCR-s is **fine-tuned from the Qwen 2.5-VL-3B-Instruct backbone**, inheriting that model’s strong multimodal reasoning and layout-aware capabilities. This choice gives the OCR system a compact size that still fits on a single consumer GPU while reaching state-of-the-art accuracy on complex documents. Community posts and the official announcement highlight that the entire 3 B stack is released under the Apache-2.0 licence, making it free to self-host, fine-tune or embed in commercial workflows.
 
 ## TL;DR:
 - Deployment of Nanonets-OCR-s model using [transformers](https://github.com/huggingface/transformers).
