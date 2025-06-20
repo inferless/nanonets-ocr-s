@@ -12,7 +12,7 @@ from pydantic import BaseModel, Field
 
 @inferless.request
 class RequestObjects(BaseModel):
-    image_url: str = Field(default="https://example.com/sample.jpg")
+    image_url: str = Field(default="https://github.com/NanoNets/docext/raw/main/assets/invoice_test.jpeg")
     prompt: str = Field(default="""Extract the text from the above document as if you were reading it naturally. Return the tables in html format. Return the equations in LaTeX representation. If there is an image in the document and image caption is not present, add a small description of the image inside the <img></img> tag; otherwise, add the image caption inside <img></img>. Watermarks should be wrapped in brackets. Ex: <watermark>OFFICIAL COPY</watermark>. Page numbers should be wrapped in brackets. Ex: <page_number>14</page_number> or <page_number>9/22</page_number>. Prefer using ☐ and ☑ for check boxes.""")
     temperature: Optional[float] = 0.7
     do_sample: Optional[bool] = False
