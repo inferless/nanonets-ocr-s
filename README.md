@@ -9,7 +9,7 @@ Under the hood, Nanonets-OCR-s is **fine-tuned from the Qwen 2.5-VL-3B-Instruct 
 - GitHub/GitLab template creation with `app.py`, `inferless-runtime-config.yaml` and `inferless.yaml`.
 - Model class in `app.py` with `initialize`, `infer`, and `finalize` functions.
 - Custom runtime creation with necessary system and Python packages.
-- Recommended GPU: NVIDIA A100 for optimal performance.
+- Recommended GPU: NVIDIA A10 for optimal performance.
 - Custom runtime selection in advanced configuration.
 - Final review and deployment on the Inferless platform.
 
