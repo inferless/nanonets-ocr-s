@@ -1,0 +1,8 @@
+# Inferless config file (version: 2.0.0)
+version: 2.0.0
+
+name: nanonets-ocr-s
+import_source: LOCAL
+
+# you can choose the options between ONNX, TENSORFLOW, PYTORCH, Only applicable for FILE type import.
+source_framework_type: PYTORCH
